@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Enlace al icono para la pagina -->
+  <link rel="icon" href="img/Logo.svg" type="image/svg+xml">
+
+  <!-- Enlace al Manifiesto -->
+  <link rel="manifest" href="Manifiesto.json">
+
+  <title>PWA 2</title>
+
+</head>
+
+<body style="background-color: darkblue; color: white;">
+  Hello World
+  <br>
+  <img src="img/Logo.png" alt="">
+  <br>
+  <button type="button" class="BtnDescargar" id="BtnDescargar">Descargar</button>
+</body>
+
+
+<script>
+  // Registrar el Service Worker
+  window.addEventListener('load', () => {
+    registerSW();
+  });
+
+  async function registerSW() {
+    if ('serviceWorker' in navigator) {
+      try {
+        await navigator
+          .serviceWorker
+          .register('ServiceWorkers.js');
+        console.log('Service Worker registrado con exito');
+      }
+      catch (e) {
+        console.log('Error en el registro del Service Worker');
+      }
+    }
+  }
+
+  // Ocultar el botón después de la instalación
+  window.addEventListener('appinstalled', () => {
+    var BtnDescargar = document.getElementById("BtnDescargar");
+    BtnDescargar.style.display = "none";
+
+    // Limpiar el defferedPrompt para que pueda ser eliminado por el recolector de basura
+    deferredPrompt = null;
+
+    // De manera opcional, enviar el evento para indicar una instalación exitosa
+    console.log('La AWP se ha instalado correctamente');
+  });
+
+
+  // Evento de instalación de la PWA
+  var vPrompt;
+  window.addEventListener('beforeinstallprompt', function (e) {
+    e.preventDefault();
+    vPrompt = e;
+    console.log('Boton para Instalación detectado');
+    AgregarClickmostrar();
+  });
+
+  function AgregarClickmostrar() {
+    var BtnDescargar = document.getElementById("BtnDescargar");
+    console.log(BtnDescargar.style.display);
+    BtnDescargar.style.display = "block";
+    BtnDescargar.addEventListener("click", mostrarprompt);
+  }
+  function mostrarprompt() {
+    var BtnDescargar = document.getElementById("BtnDescargar");
+    BtnDescargar.style.display = 'none';
+    vPrompt.prompt();
+    vPrompt.userChoice.then(function (choiceResult) {
+      if (choiceResult.outcome === 'accepted') {
+        console.log('El usuario Aceptó la instalación');
+      }
+      else { console.log('El usuario Ignoró la acción'); }
+      vPrompt = null;
+    });
+  }
+
+</script>
+
+</html>

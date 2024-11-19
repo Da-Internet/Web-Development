@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function Cargar1() {
+            const url = 'Hola.txt'
+            const http = new XMLHttpRequest()
+
+            var object = document.getElementById("Destino1");
+            http.open("GET", url);
+
+
+            http.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    object.innerHTML = http.responseText;
+                    console.log(this.responseText);
+                }
+            }
+
+            http.send();
+        }
+
+        function Cargar2() {
+            const url = 'Hola.php'
+            const http = new XMLHttpRequest()
+
+            var object = document.getElementById("Destino2");
+            http.open("GET", url);
+
+
+            http.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    object.innerHTML = http.responseText;
+                    console.log(this.responseText);
+                }
+            }
+
+            http.send();
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <a href="#" onclick="Cargar1()"> Cargar Archivo 1 </a>
+    <div id="Destino1"> Contenido </div>
+
+    <a href="#" onclick="Cargar2()"> Cargar Contenido </a>
+    <div id="Destino2"> Contenido </div>
+
+</body>
+
+</html>

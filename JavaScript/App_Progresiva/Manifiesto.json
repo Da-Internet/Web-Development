@@ -1,0 +1,23 @@
+{
+    "scope": ".",
+    "name": "Aplicacion Web Progresiva",
+    "short_name": "AWP",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#00008b",
+    "theme_color": "#4db6ac",
+    "description": "Ejemplo de AWP",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "img/icon.webp",
+            "type": "image/webp",
+            "sizes": "32x32"
+        },
+        {
+            "src": "img/Logo.png",
+            "type": "image/webp",
+            "sizes": "250x250"
+        }
+    ]
+}

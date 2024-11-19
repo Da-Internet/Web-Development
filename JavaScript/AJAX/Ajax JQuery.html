@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax con JQuery</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script>
+        function enviar() {
+
+            var btnEnviar = $("#btnEnviar");
+            var txtNombre = document.getElementById('txtNombre')
+
+            $.ajax({
+                type: 'POST',
+                url: 'Datos.php',
+                data: { nombre: txtNombre.value },
+                beforeSend: function () {
+                    btnEnviar.text("Enviando");
+                },
+
+                complete: function (data) {
+                    var respuesta = data.responseText;
+                    btnEnviar.text("Enviar");
+                },
+
+                success: function (respuesta) {
+                    alert(respuesta);
+                }, error: function (data) {
+                    alert("Error de activacion");
+                }
+            });
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <div class="form-group">
+
+        <div class="input-group-append">
+
+            <input type="text" name="txtNombre" id="txtNombre">
+
+            <br>
+            <br>
+
+            <button type="submit" class="css1" name="btnEnviar" id="btnEnviar" onclick="enviar()">
+                Boton
+            </button>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
