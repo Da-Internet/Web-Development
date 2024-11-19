@@ -1,11 +1,7 @@
-# Pruebas con Paginas Web
+# Web Development
 
-## HTML
+## English
+A repository dedicated to store various projects I've made for future references
 
-## CSS
-
-## JavaScript
-
-## PHP
-
-## Frameworks en General
+## Spanish
+Un repositorio dedicado a guardar varios proyectos que he hecho con el fin de consultas futuras
