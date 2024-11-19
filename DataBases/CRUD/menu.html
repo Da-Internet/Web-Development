@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Practica web con Ajax</title>
+
+    <link rel="stylesheet" href="./CSS/styles.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script src="./js/menu.js"></script>
+</head>
+
+<!-- Hecho por: Diego Alberto Canto Ricardez -->
+
+<body class="dark-theme">
+
+    <h1 class="title">Objetivos</h1>
+
+    <div id="form-container" class="form-box">
+        <form id="formulario">
+
+            <div class="form-group">
+                <label for="imagen">Imagen:</label>
+                <input type="url" id="imagen" name="imagen" placeholder="Imagen del Objetivo (URL)" required>
+            </div>
+
+            <div class="form-group">
+                <label for="objetivo">Objetivo:</label>
+                <input type="text" id="objetivo" name="objetivo" placeholder="Nombre del objetivo" required>
+            </div>
+
+            <div class="form-group">
+                <label for="recompensa">Categoria:</label>
+                <select id="categoria" name="categoria" required>
+                    <option value="">Selecciona una categoría del objetivo</option>
+                    <option value="Videojuegos">Videojuegos</option>
+                    <option value="Peliculas">Películas</option>
+                    <option value="Anime">Anime</option>
+                    <option value="Libro">Libros</option>
+                    <option value="IRL">IRL</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="recompensa">Recompensa:</label>
+                <input type="text" id="recompensa" name="recompensa" placeholder="Recompensa por eliminar al objetivo"
+                    required>
+            </div>
+
+            <button type="submit" id="btnAgregar">Agregar</button>
+
+            <!-- Contenedor para el mensaje -->
+            <div id="mensaje-container"></div>
+
+        </form>
+        <br>
+
+        <button type="submit" id="btnLogin">Cerrar Sesion</button>
+
+    </div>
+
+    <hr>
+
+    <h1 class="title">Lista de Objetivos</h1>
+
+    <div id="menu-filtro">
+        <button class="btn-filtro" data-categoria="Videojuegos">Videojuegos</button>
+        <button class="btn-filtro" data-categoria="Peliculas">Películas</button>
+        <button class="btn-filtro" data-categoria="Anime">Anime</button>
+        <button class="btn-filtro" data-categoria="Libro">Libros</button>
+        <button class="btn-filtro" data-categoria="IRL">IRL</button>
+        <button class="btn-filtro" data-categoria="Todos">Todos</button>
+    </div>
+
+
+    <div id="objetivos-lista" class="objetivos-container">
+
+    </div>
+
+</body>
+
+</html>

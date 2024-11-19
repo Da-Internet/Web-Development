@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login con Ajax</title>
+    <link rel="stylesheet" href="./CSS/styles.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+</head>
+
+<!-- Hecho por: Diego Alberto Canto Ricardez -->
+
+<body class="dark-theme">
+
+    <h1 class="title">Acceso Restringido</h1>
+
+    <div id="form-container" class="form-box">
+
+        <form id="formulario">
+
+            <div class="form-group">
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" placeholder="Ingrese su correo" required>
+            </div>
+
+            <div class="form-group">
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena" placeholder="Ingrese su contraseña" required>
+            </div>
+
+            <button type="submit" id="BtnGuardar" onclick="">Guardar</button>
+
+            <div id="mensaje-container"></div>
+
+        </form>
+
+    </div>
+
+    <script src="./js/login.js"></script>
+
+
+</body>
+
+</html>

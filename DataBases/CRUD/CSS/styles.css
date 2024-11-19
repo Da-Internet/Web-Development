@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #00ff00;
+}
+
+.title {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form-box {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border: 2px solid #00ff00;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #00ff00;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="url"],
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 2px solid #00ff00;
+    background-color: #000;
+    color: #fff;
+}
+
+#categoria {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 2px solid #00ff00;
+    background-color: #000;
+    color: #fff;
+}
+
+.form-box input[type="text"],
+.form-box input[type="email"],
+.form-box input[type="password"],
+.form-box input[type="url"],
+.form-box input[type="number"] {
+    max-width: calc(100% - 16px);
+
+    box-sizing: border-box;
+
+}
+
+.form-box #categoria {
+    max-width: calc(100% - 16px);
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #00ff00;
+    border: 2px solid #00ff00;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #333;
+
+}
+
+#mensaje-container {
+    margin-top: 20px;
+    text-align: center;
+    display: none;
+}
+
+.mensaje-success {
+    color: #00ff00;
+}
+
+.mensaje-error {
+    color: #ff0000;
+}
+
+.objetivos-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 30px;
+}
+
+.Img_Objetivo {
+    width: 300px;
+    max-width: 300px;
+    max-height: 300px;
+}
