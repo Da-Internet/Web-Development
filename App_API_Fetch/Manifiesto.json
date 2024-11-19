@@ -1,0 +1,24 @@
+
+{
+    "scope": ".",
+    "name": "VirtualNews",
+    "short_name": "VirtualNews",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#1B2838",
+    "theme_color": "#1B2838",
+    "description": "Ejemplo de VN",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "img/icon.webp",
+            "type": "image/webp",
+            "sizes": "32x32"
+        },
+        {
+            "src": "img/Logo.png",
+            "type": "image/png",
+            "sizes": "250x250"
+        }
+    ]
+}
