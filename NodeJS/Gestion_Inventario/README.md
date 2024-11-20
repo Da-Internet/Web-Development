@@ -1,4 +1,4 @@
-# Gestion-Inventario
+# Gestion de Inventario
 
 # Codigos para terminal
 
@@ -95,32 +95,3 @@ Crearemos los servicios en PuntosController  (Revisar PuntosController )
 ## Paso 14
 Configuraremos la ruta en el servidor (Server.js) con un MiddleWare
 
-# Cosas importantes
-## IMPORTANTE
-el express constante  que requiere express instalado
-
-## Server
-La app constante que requiere express
-Definir el puerto constante 3000
-El body parser y morgan constantes que requieren los modulos respectivos
-
-## Enrutamientos
-El exportar el modulo del enrutamiento al final, con rutas constantes que requieren rutas express
-
-## Controladores
-La conexion constanste requiere conectarse a la base de datos
-Los modulos se pueden exportar en conjunto con {}
-Los controladores tienen requisitos y resultados
-El resultado tiene cuerpo
-
-## Base de Datos
-La constante de mysql2 que requiere mysql2
-La conexion constante que se crea con mysql2 con el host, usuario, contraseña y el nombre de la base de datos y el puerto del xampp
-El exportar el modulo de conexion
-
-## Sentencias de SQL
-"INSERT INTO `Tabla`(`Campo1`, `Campo2`, `Campo3`, `Campo4`, `Campo5`) VALUES (?,?,?,?,?);"
-'SELECT * FROM `Tabla`;'
-'SELECT * FROM `Tabla` WHERE Columna=?;'
-'DELETE FROM `Tabla` WHERE id=?'
-'UPDATE `Tabla` SET Campo1=?, Campo2=?, Campo3=?, Campo4=? , Campo5=? WHERE id=?;'
