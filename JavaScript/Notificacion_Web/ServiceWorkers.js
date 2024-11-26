@@ -95,7 +95,7 @@ self.addEventListener('fetch', event => {
     const requestUrl = new URL(event.request.url);
 
     // Registramos la solicitud del service worker
-    console.log(`Interceptando solicitudes para: ${requestUrl.origin}`);
+    // console.log(`Interceptando solicitudes para: ${requestUrl.origin}`);
 
     event.respondWith(
         (async () => {
@@ -108,7 +108,7 @@ self.addEventListener('fetch', event => {
 
                 // Registramos la respuesta del Service Worker
                 cache.put(event.request, networkResponse.clone());
-                console.log(`Respuesta desde el servidor y guardada en cache: ${requestUrl.pathname}`);
+                // console.log(`Respuesta desde el servidor y guardada en cache: ${requestUrl.pathname}`);
                 return networkResponse;
 
             } catch (error) {
