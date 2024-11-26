@@ -26,7 +26,7 @@ const files = [
     './JS/Header1.js',
     './Header1.html',
 
-    './Index.html',
+    './Home.html',
     './Manifest.json'
 ];
 
