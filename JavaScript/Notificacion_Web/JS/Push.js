@@ -32,7 +32,7 @@ function enviarNotificacion(titulo, mensaje) {
         new Notification(titulo, options);
 
     } else {
-        
+
         console.log("No se pueden enviar notificaciones. Permiso no concedido.");
     }
 }
