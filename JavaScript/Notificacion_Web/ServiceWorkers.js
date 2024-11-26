@@ -42,8 +42,6 @@ self.addEventListener('push', event => {
     );
 });
 
-
-
 // Evento para manejar clics en las notificaciones
 self.addEventListener('notificationclick', event => {
     console.log("Notificación clickeada:", event.notification);
@@ -94,7 +92,10 @@ self.addEventListener("install", event => {
 
 // Evento de Fetch 
 self.addEventListener('fetch', event => {
-    console.log("Interceptando solicitud:", event.request.url);
+    const requestUrl = new URL(event.request.url);
+
+    // Registramos la solicitud del service worker
+    console.log(`Interceptando solicitudes para: ${requestUrl.origin}`);
 
     event.respondWith(
         (async () => {
@@ -102,23 +103,24 @@ self.addEventListener('fetch', event => {
 
             try {
 
-                // Buscamos respuesta de la red
+                // Vemos si hay internet
                 const networkResponse = await fetch(event.request);
-                console.log("Respuesta del servidor:", event.request.url);
+
+                // Registramos la respuesta del Service Worker
+                cache.put(event.request, networkResponse.clone());
+                console.log(`Respuesta desde el servidor y guardada en cache: ${requestUrl.pathname}`);
                 return networkResponse;
 
             } catch (error) {
-
-                console.warn("Sin conexión. Intentando cargar desde el cache:", event.request.url);
+                console.warn(`Sin conexión. Intentando cargar desde el cache: ${requestUrl.pathname}`);
                 const cachedResponse = await cache.match(event.request);
 
-                // Por si no hay internet pero si cache
                 if (cachedResponse) {
-                    console.log("Recurso encontrado en cache:", event.request.url);
+                    console.log(`Recurso cargado desde cache: ${requestUrl.pathname}`);
                     return cachedResponse;
                 }
 
-                // Por si no hay cache ni internet
+                // Si no hay cache ni internet
                 return new Response("Recurso no disponible offline.", {
                     status: 404,
                     statusText: "Not Found"
@@ -127,6 +129,7 @@ self.addEventListener('fetch', event => {
         })()
     );
 });
+
 
 // Evento de activación para limpiar el cache antiguo
 self.addEventListener("activate", event => {
