@@ -17,6 +17,8 @@
   <!-- Enlace del Manifiesto -->
   <link rel="manifest" href="Manifest.json">
 
+  <!-- Enlace del Push -->
+  <script src="./JS/push.js"></script>
 
 
 </head>
@@ -36,9 +38,19 @@
   <!-- Botones para Notificaciones -->
 
   <div>
-    <button class="btn btn-outline-primary" type="submit">Notificacion 1</button>
-    <button class="btn btn-outline-primary" type="submit">Notificacion 2</button>
-    <button class="btn btn-outline-primary" type="submit">Notificacion 3</button>
+    <button class="btn btn-outline-primary"
+      onclick="enviarNotificacion('Notificación 1', 'Este es el mensaje de la Notificación 1')">
+      Notificación 1
+    </button>
+    <button class="btn btn-outline-primary"
+      onclick="enviarNotificacion('Notificación 2', 'Este es el mensaje de la Notificación 2')">
+      Notificación 2
+    </button>
+    <button class="btn btn-outline-primary"
+      onclick="enviarNotificacion('Notificación 3', 'Este es el mensaje de la Notificación 3')">
+      Notificación 3
+    </button>
+
   </div>
 
   <br>
