@@ -4,7 +4,7 @@
     "name": "VirtualNews",
     "id": "VirtualNews",
     "short_name": "VirtualNews",
-    "start_url": "index.php",
+    "start_url": "home.html",
     "display": "standalone",
     "background_color": "#1B2838",
     "theme_color": "#1B2838",
