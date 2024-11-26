@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VirtualNews</title>
+
+  <!-- Enlace al icono para la pagina -->
+  <link rel="icon" href="img/Logo.svg" type="img/svg+xml">
+
+  <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+
+  <!-- Hecha por: Diego Alberto Canto Ricardez -->
+
+  <!-- Enlace del Manifiesto -->
+  <link rel="manifest" href="Manifest.json">
+
+</head>
+
+<body style="background-color: #1B2838;">
+
+  <!-- Header -->
+  <header>
+    <div id="header"></div>
+  </header>
+
+  <!-- Titulo -->
+  <h3 class="text-white">Noticias de Hoy</h3>
+
+  <br>
+
+  <!-- Carrusel -->
+  <div id="carouselExampleCaptions" class="carousel slide carousel-fade">
+
+    <!-- Los indicadores pequeños del Carrusel -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+        aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+        aria-label="Slide 5"></button>
+    </div>
+
+    <!-- Noticias del Carrusel -->
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <a href="./GameNews/Noticia_Carrusel.html">
+
+          <img src="Img/Among_Us.png" class="d-block w-100" style="width: 300px; height: 600px;" alt="...">
+
+          <div class="carousel-caption d-none d-md-block">
+
+            <h5 class="text-white bg-dark bg-opacity-75">Among Us</h5>
+            <p class="text-white bg-dark bg-opacity-75">InnerSloth Enfrenta Sentencia por Incumplimiento de la
+              Convención de Geneva</p>
+
+          </div>
+        </a>
+      </div>
+
+      <div class="carousel-item">
+        <a href="./GameNews/Noticia_Carrusel.html">
+
+          <img src="Img/Elden_Ring.png" class="d-block w-100" style="width: 300px; height: 600px;" alt="...">
+
+          <div class="carousel-caption d-none d-md-block">
+
+            <h5 class="text-white bg-dark bg-opacity-75">Elden Ring</h5>
+            <p class="text-white bg-dark bg-opacity-75">Elden Ring Recibe Nominación al Juego del Año 2024</p>
+
+          </div>
+        </a>
+      </div>
+
+      <div class="carousel-item">
+        <a href="./GameNews/Noticia_Carrusel.html">
+
+          <img src="Img/Unicorn_Overlord.png" class="d-block w-100" style="width: 300px; height: 600px;" alt="...">
+
+          <div class="carousel-caption d-none d-md-block">
+
+            <h5 class="text-white bg-dark bg-opacity-75">Unicorn Overlord</h5>
+            <p class="text-white bg-dark bg-opacity-75">Unicorn Overlord Supera el Millón de Ventas en Tiempo Récord.
+            </p>
+
+          </div>
+        </a>
+      </div>
+
+      <div class="carousel-item">
+        <a href="./GameNews/Noticia_Carrusel.html">
+
+          <img src="Img/EA_FC.png" class="d-block w-100" style="width: 300px; height: 600px;" alt="...">
+
+          <div class="carousel-caption d-none d-md-block">
+
+            <h5 class="text-white bg-dark bg-opacity-75">Electronic Arts</h5>
+            <p class="text-white bg-dark bg-opacity-75">EA Sports Confirma el Lanzamiento de 5 Nuevas Entregas de FIFA
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <div class="carousel-item">
+        <a href="./GameNews/Noticia_Carrusel.html">
+
+          <img src="Img/SilkSong.png" class="d-block w-100" style="width: 300px; height: 600px;" alt="...">
+
+          <div class="carousel-caption d-none d-md-block">
+
+            <h5 class="text-white bg-dark bg-opacity-75">SilkSong</h5>
+            <p class="text-white bg-dark bg-opacity-75">Sin Noticias de Hollow Knight SilkSong</p>
+          </div>
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Botones del Carrusel -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+  </div>
+
+  <!-- Noticias Semanales -->
+  <h3 class="text-white">Noticias de la semana</h3>
+
+  <div class="container text-center">
+    <div class="row align-items-start">
+
+      <!-- Primera Columna -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card text-bg-dark mb-3" style="width: 18rem;">
+
+          <a href="GameNews/Noticia_Columna.html">
+
+            <img src="./Img/Ace_Attorney.png" class="card-img-top" alt="...">
+
+            <div class="card-body">
+              <p class="card-title text-white bg-dark bg-opacity-75">Ace Attorney</p>
+              <p class="card-text text-white bg-dark bg-opacity-75">Capcom lanza un podcast de Ace Attorney
+                protagonizado por Phoenix Wright y Miles
+                Edgeworth</p>
+            </div>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Segunda Columna -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card text-bg-dark mb-3" style="width: 18rem;">
+
+          <a href="GameNews/Noticia_Columna.html">
+
+            <img src="./Img/Baldurs_Gate_3.png" class="card-img-top" alt="...">
+
+            <div class="card-body">
+              <p class="card-title text-white bg-dark bg-opacity-75">Larian Studios</p>
+              <p class="card-text text-white bg-dark bg-opacity-75">Baldur's Gate 3 tendrá soporte oficial para mods
+                entre plataformas</p>
+            </div>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Tercera Columna -->
+      <div class="col-lg-4">
+        <div class="card text-bg-dark mb-3" style="width: 18rem;">
+
+          <a href="GameNews/Noticia_Columna.html">
+
+            <img src="./Img/Ubisoft.png" class="card-img-top" alt="...">
+
+            <div class="card-body">
+              <p class="card-title text-white bg-dark bg-opacity-75">Ubisoft</p>
+              <p class="card-text text-white bg-dark bg-opacity-75">Ubisoft culpa a los "Gamers" tras la mala recepción
+                de Star Wars Outlaws</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="card text-bg-dark mb-3" style="width: 18rem;">
+          <a href="GameNews/Noticia_Columna.html">
+
+            <img src="./Img/Steam.png" class="card-img-top" alt="...">
+
+            <div class="card-body">
+              <p class="card-title text-white bg-dark bg-opacity-75">Steam</p>
+              <p class="card-text text-white bg-dark bg-opacity-75">Los lanzamientos de videojuegos más esperados para
+                Steam
+                del invierno de 2024</p>
+            </div>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
+<!-- Los JS -->
+<script src="./JS/Header1.js"></script>
+<script src="./JS/bootstrap.bundle.js"></script>
+
+<!-- Service Worker -->
+<script>
+
+  window.addEventListener('load', () => {
+    registerSW();
+  });
+
+  // Registrar el Service Worker
+  async function registerSW() {
+    if ('serviceWorker' in navigator) {
+      try {
+        await navigator
+          .serviceWorker
+          .register('./ServiceWorkers.js');
+      }
+      catch (e) {
+        console.log('Error en el registro del SW');
+      }
+    }
+  }
+
+  window.addEventListener('online', () => {
+    if (navigator.serviceWorker.controller) {
+      navigator.serviceWorker.controller.postMessage('checkConnection');
+    }
+  });
+
+</script>
+
+</html>

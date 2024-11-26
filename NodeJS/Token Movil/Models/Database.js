@@ -9,7 +9,7 @@ const conexion = mysql2.createConnection({
     host: 'localhost',
     user: 'root',
     password: '',
-    database: 'Gestion_Inventario',
+    database: 'Sistema_Escolar_Token',
     port: 3306
 
 }); // Todavia no se esta conectando aqui, solo se crea el objeto de Conexion
