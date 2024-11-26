@@ -8,12 +8,11 @@ if (!("Notification" in window)) {
 
     // Solicitar permiso al usuario
     Notification.requestPermission().then((permission) => {
-        if (permission === "granted") {
 
+        if (permission === "granted") {
             console.log("Permiso de notificaciones concedido.");
 
         } else {
-
             console.log("Permiso de notificaciones denegado.");
 
         }
@@ -22,7 +21,6 @@ if (!("Notification" in window)) {
 
 // Función para enviar una notificación
 function enviarNotificacion(titulo, mensaje) {
-
     if (Notification.permission === "granted") {
 
         const options = {
@@ -30,9 +28,11 @@ function enviarNotificacion(titulo, mensaje) {
             icon: "./IMG/Logo.svg"
         };
 
+        console.log(`Enviando notificación: ${titulo} - ${mensaje}`);
         new Notification(titulo, options);
 
     } else {
+        
         console.log("No se pueden enviar notificaciones. Permiso no concedido.");
     }
 }
