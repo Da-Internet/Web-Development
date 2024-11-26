@@ -53,6 +53,7 @@ self.addEventListener('notificationclick', event => {
     // Para abrir la URL
     event.waitUntil(
         clients.matchAll({ type: 'window', includeUncontrolled: true }).then(clientList => {
+            
             // Confirmar que no este abierta ya la URL
             const client = clientList.find(c => c.url === urlToOpen && 'focus' in c);
 

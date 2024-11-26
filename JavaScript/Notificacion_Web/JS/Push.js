@@ -19,7 +19,7 @@ if (!("Notification" in window)) {
     });
 }
 
-// Función para enviar una notificación
+// Función para enviar notificación
 function enviarNotificacion(titulo, mensaje) {
     if (Notification.permission === "granted") {
 
