@@ -244,6 +244,7 @@
 <!-- Los JS -->
 <script src="./JS/Header1.js"></script>
 <script src="./JS/bootstrap.bundle.js"></script>
+<script src="./ServiceWorker.js?v=1"></script>
 
 <!-- Service Worker -->
 <script>
@@ -258,7 +259,7 @@
       try {
         await navigator
           .serviceWorker
-          .register('./ServiceWorkers.js');
+          .register('ServiceWorker.js');
       }
       catch (e) {
         console.log('Error en el registro del SW');
