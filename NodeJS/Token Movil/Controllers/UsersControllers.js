@@ -20,13 +20,23 @@ loginUser = async (req, res) => {
 
             if (isMatch) {
                 res.json({ message: "Login Exitoso", data: results });
+
                 // Generar un token aquí
                 const token = generarToken(user)//Se le pasan los datos del usuario
+                //Almacenar el token en una cookie
+
+                /*Opcion 1.- El servidor almacena el token en una cookie*/
+                res.cookie('token: ', token, {httpOnly:true,secure:false,maxAge:60000});
                 
+                /*Opcion 2.- El servidor devuelve el token y la aplicacion cliente lo almacena*/
+                res.json({ token });
+
             } else {
+
                 res.json({ message: "Usuario o contraseña incorrectos", data: [] });
             }
         } else {
+            
             res.json({ message: "Usuario o contraseña incorrectos", data: [] });
         }
     });
@@ -64,7 +74,7 @@ registrarUser = async (req, res) => {
 }
 
 obtenerUsuarios = (req, res) => {
-    //Llammar a todos los usuarios existentes
+    //Llamar a todos los usuarios existentes
     const query = 'SELECT * FROM `Users`;'
 
     conexion.query(query, (err, results) => {
