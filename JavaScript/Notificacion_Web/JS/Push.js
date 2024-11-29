@@ -1,41 +1,38 @@
 
-// Verificar Soporte de Notificaciones
-function allowedNotifications() {
-    if (!("Notification" in window)) {
-        console.log("Notificaciones no Soportadas en el Navegador");
-        return;
+// Verificar soporte de notificaciones
+if (!("Notification" in window)) {
+
+    console.log("Este navegador no soporta notificaciones.");
+
+} else if (Notification.permission !== "granted") {
+
+    // Solicitar permiso al usuario
+    Notification.requestPermission().then((permission) => {
+
+        if (permission === "granted") {
+            console.log("Permiso de notificaciones concedido.");
+
+        } else {
+            console.log("Permiso de notificaciones denegado.");
+
+        }
+    });
+}
+
+// Función para enviar notificación
+function enviarNotificacion(titulo, mensaje) {
+    if (Notification.permission === "granted") {
+
+        const options = {
+            body: mensaje,
+            icon: "./IMG/Logo.svg"
+        };
+
+        console.log(`Enviando notificación: ${titulo} - ${mensaje}`);
+        new Notification(titulo, options);
+
+    } else {
+
+        console.log("No se pueden enviar notificaciones. Permiso no concedido.");
     }
-
-    Notification.requestPermission()
-        .then(permission => {
-            if (permission === "granted") {
-                console.log("Permisos para Notificaciones Aceptados");
-            } else {
-                console.log("Permisos para Notificaciones Denegados");
-            }
-        })
-        .catch(error => {
-            console.error("Error al Solicitar Permiso para Notificaciones:", error);
-        });
 }
-
-// Función para mostrar Notificaciones
-function showNotifications() {
-    const notif = document.getElementById('MyNotif');
-    notif.style.display = 'block';
-}
-
-// Pedir el permiso cuando cargue la pagina
-document.addEventListener("DOMContentLoaded", () => {
-    allowedNotifications();
-    setTimeout(() => {
-        showNotifications();
-    }, 3000); // Mostrar notificación después de 3 segundos
-});
-
-//Cerrar el dialogo
-document.getElementById('CloseNotif').addEventListener('click', () => {
-    const notif = document.getElementById('MyNotif');
-    notif.style.display = 'none'; // Ocultar el div
-});
-
