@@ -2,7 +2,7 @@
 console.log("Archivo ServiceWorker.js detectado");
 
 // Nombre del Cache
-const currentCache = 'cache-v2.5';
+const currentCache = 'cache-v3.1';
 
 // Archivos para  guardar  en el caché
 const files = [
@@ -23,47 +23,6 @@ const files = [
     './Support.html',
     './Manifest.json'
 ];
-
-// Evento para manejar el mensaje push
-self.addEventListener('push', event => {
-    const data = event.data ? event.data.json() : {};
-    const { title = "Notificación", body = "Mensaje recibido", icon = "./IMG/Logo.svg" } = data;
-
-    console.log("Notificación recibida:", { title, body, icon });
-
-    event.waitUntil(
-        self.registration.showNotification(title, { body, icon, data })
-    );
-});
-
-// Evento para manejar clics en las notificaciones
-self.addEventListener('notificationclick', event => {
-    console.log("Notificación clickeada:", event.notification);
-
-    event.notification.close(); // Para cerrar la notificación al clickear
-
-    const urlToOpen = event.notification.data || '/';
-
-    // Para abrir la URL
-    event.waitUntil(
-        clients.matchAll({ type: 'window', includeUncontrolled: true }).then(clientList => {
-
-            // Confirmar que no este abierta ya la URL
-            const client = clientList.find(c => c.url === urlToOpen && 'focus' in c);
-
-            if (client) {
-                return client.focus();
-            }
-
-            // Si no, abrimos la URL
-            if (clients.openWindow) {
-                return clients.openWindow(urlToOpen);
-            }
-        })
-    );
-});
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // Evento de instalación
 self.addEventListener("install", event => {
