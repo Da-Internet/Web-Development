@@ -1,21 +1,21 @@
 
-// Verificar soporte de notificaciones
+// Verificar Soporte de Notificaciones
 function allowedNotifications() {
     if (!("Notification" in window)) {
-        console.log("Notificaciones no soportadas en el navegador");
+        console.log("Notificaciones no Soportadas en el Navegador");
         return;
     }
 
     Notification.requestPermission()
         .then(permission => {
             if (permission === "granted") {
-                console.log("Permisos para notificaciones aceptados");
+                console.log("Permisos para Notificaciones Aceptados");
             } else {
-                console.log("Permisos para notificaciones denegados");
+                console.log("Permisos para Notificaciones Denegados");
             }
         })
         .catch(error => {
-            console.error("Error al solicitar permiso para notificaciones:", error);
+            console.error("Error al Solicitar Permiso para Notificaciones:", error);
         });
 }
 
@@ -38,3 +38,4 @@ document.getElementById('CloseNotif').addEventListener('click', () => {
     const notif = document.getElementById('MyNotif');
     notif.style.display = 'none'; // Ocultar el div
 });
+
