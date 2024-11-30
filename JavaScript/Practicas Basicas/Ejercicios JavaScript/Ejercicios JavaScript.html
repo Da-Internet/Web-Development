@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios en JavaScript</title>
+
+    <link rel="stylesheet" href="Ejercicios JavaScript.css">
+    <script src="Ejercicios JavaScript.js"></script>
+
+</head>
+
+<body>
+
+    <h1 class="Titulo">Ejercicios en JavaScript</h1>
+
+    <div class="Formulario">
+
+        <div class="Pregunta">
+
+            <p>
+                Ejercicio 1 - Escribe un programa que pida una frase y escriba cuántas veces aparecen cada una de las
+                vocales
+            </p>
+
+            <div class="Pregunta">
+                <label for="Frase"> Frase </label>
+                <input type="text" id="Frase" name="Frase" placeholder="Ingrese la Frase" required>
+            </div>
+
+            <p id="Vocales"></p>
+
+            <button type="submit" id="botonFrase" class="button"> Comparar Edad </button>
+
+        </div>
+
+        <br>
+        <hr>
+        <br>
+
+        <div class="Pregunta">
+
+            <p>
+                Ejercicio 2 - Escribe un programa que solicite al usuario ingresar el número de kilómetros recorridos
+                por su coche y el número de litros consumidos.
+                <br>
+                El script debe mostrar el consumo de combustible por kilómetro.
+            </p>
+
+            <label for="Kilometros"> Kilómetros recorridos </label>
+            <input type="number" id="Kilometros" name="Kilometros" placeholder="Ingrese los Kilómetros Recorridos"
+                required>
+
+            <br>
+            <br>
+
+            <label for="Litros"> Litros Consumidos </label>
+            <input type="number" id="Litros" name="Litros" placeholder="Ingrese los Litros Consumidos" required>
+
+            <p id="Consumo"></p>
+
+            <button type="" id="BotonGasolina" class="button"> Obtener Consumo de Combustible por Kilómetro</button>
+
+        </div>
+
+        <br>
+        <hr>
+        <br>
+
+        <div class="Pregunta">
+
+            <p>
+                Ejercicio 3 - Escribe un programa que solicite al usuario ingresar las horas y los minutos, mostrar
+                los segundos de ese tiempo.
+            </p>
+
+            <label for="Horas"> Horas </label>
+            <input type="number" id="Horas" name="Horas" placeholder="Ingrese las Horas" required>
+
+            <br>
+            <br>
+
+            <label for="Minutos"> Minutos </label>
+            <input type="number" id="Minutos" name="Minutos" placeholder="Ingrese los Minutos" required>
+
+            <p id="Segundos"></p>
+
+            <button type="" id="BotonSegundos" class="button">Total de Segundos</button>
+
+        </div>
+
+        <br>
+        <hr>
+        <br>
+
+        <div class="Pregunta">
+
+            <p>
+                Ejercicio 4 - Escribe un programa que solicite al usuario ingresar un número de 2 dígitos y muestre
+                el número de unidades y de decenas de dicho número
+            </p>
+
+            <label for="Num2Digitos"> Número de 2 Dígitos </label>
+            <input type="number" id="Num2Digitos" name="Num2Digitos" placeholder="Ingrese un Número de 2 Dígitos"
+                required>
+
+            <p id="Unidades"></p>
+            <p id="Decenas"></p>
+
+            <button type="" id="BotonUniDecenas" class="button">Obtener Unidades y Decenas</button>
+
+        </div>
+
+        <br>
+        <hr>
+        <br>
+
+        <div class="Pregunta">
+
+            <p>
+                Ejercicio 5 - Una tortilla de patatas lleva 200 gramos de patatas por persona.
+                <br>
+                Por cada kilo de
+                patatas se necesitan 5 huevos y 300 gramos de cebolla.
+                <br>
+                Escribe un script que dado el número de comensales calcule las cantidades de ingredientes necesarias
+            </p>
+
+            <label for="Comensales"> Comensales </label>
+            <input type="number" id="Comensales" name="Comensales" placeholder="Ingrese el número de Comensales"
+                required>
+
+            <p id="Cantidad_Papas"></p>
+            <p id="Cantidad_Huevos"></p>
+            <p id="Cantidad_Cebolla"></p>
+
+            <button type="" id="BotonIngredientes" class="button">Ingredientes Necesarios</button>
+
+        </div>
+
+        <br>
+        <hr>
+        <br>
+
+        <div class="Pregunta">
+
+            <p>
+                Ejercicio 6 - Crear en javascript un programa que tome un array de números y me muestre el número
+                más grande del array
+            </p>
+
+            <label for="Array1"> Arreglo 1 </label>
+            <input type="" id="Array1" name="Array1" placeholder="Ingrese el Arreglo de Números Separados por Comas"
+                required>
+
+            <p id="MayorArray"></p>
+
+            <button type="" id="BotonMayorArray" class="button">Obtener el Número más Grande</button>
+
+        </div>
+
+        <br>
+        <hr>
+        <br>
+
+        <div class="Pregunta">
+
+            <p>
+                Ejercicio 7 - Crear en javascript un programa que tome un array de números y me muestre la suma
+                total de todos los números del array
+            </p>
+
+            <label for="Array2"> Arreglo 2 </label>
+            <input type="" id="Array2" name="Array2" placeholder=" Ingrese el Arreglo de Números Separado con Comas"
+                required>
+
+            <p id="SumaArray"></p>
+
+            <button type="" id="BotonSumaArray" class="button">Obtener la Suma de Números</button>
+
+        </div>
+
+        <br>
+        <hr>
+        <br>
+
+        <div class="Pregunta">
+
+            <p>
+                Ejercicio 8 - El factorial de un número entero n es una operación matemática que consiste en
+                multiplicar todos los factores n x (n-1) x (n-2) x ... x 1.
+                <br>
+                Así, el factorial de 5 (escrito como 5!) es igual a: 5! = 5 x 4 x 3 x 2 x 1 = 120
+                <br>
+                Utilizando la estructura for, crear un script que calcule el factorial de un número entero.
+            </p>
+
+            <label for="Factorial"> Factorial </label>
+            <input type="" id="Factorial" name="Factorial" placeholder="Ingrese el Número Entero" required>
+
+            <p id="FactorialResultado"></p>
+
+            <button type="" id="BotonFactorial" class="button"> Calcular Factorial</button>
+
+        </div>
+
+        <br>
+        <hr>
+        <br>
+
+        <div class="Pregunta">
+
+            <p>
+                Ejercicio 10 - Definir una función que determine si la cadena de texto que se le pasa como parámetro
+                es un palíndromo
+                <br>
+                Es decir, si se lee de la misma forma desde la izquierda y desde la derecha.
+                <br>
+                Ejemplo de palíndromo simple:"oso"
+                <br>
+                Ejemplo de palíndromo complejo: "La ruta nos aportó otro paso natural".
+            </p>
+
+            <label for="Palindromo"></label>
+            <input type="" id="Palindromo" name="Palindromo" placeholder="Ingresa la Oración" required>
+
+            <p id="PalindromoConfirmado"></p>
+
+            <button type="" id="BotonPalindromo" class="button">Confirmar si es un Palíndromo</button>
+
+        </div>
+
+        <br>
+        <hr>
+        <br>
+
+        <div class="Pregunta">
+
+            <p>
+                Ejercicio 11 - Escribir una función llamada removerCeros que reciba un arreglo de números y retorne un
+                nuevo arreglo excluyendo los ceros (0).
+            </p>
+
+            <label for="Arreglo0"></label>
+            <input type="" id="Arreglo0" name="Arreglo0" placeholder="Ingrese un Arreglo de Números" required>
+
+            <p id="ArregloSin0"></p>
+
+            <button type="" id="BotonArreglo0" class="button">Obtener Arreglo sin 0s</button>
+
+        </div>
+
+    </div>
+
+    <footer class="PiePagina">
+        Hecho por: Diego Alberto Canto Ricardez | 12/03/2024
+    </footer>
+
+</body>
+
+</html>
