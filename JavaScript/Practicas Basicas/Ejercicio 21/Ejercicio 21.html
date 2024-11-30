@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <title>Ejercicio 21</title>
+</head>
+
+<body>
+    <script>
+
+        function Tutor(nombre, apellido) {
+            this.nombre = nombre;
+            this.saludar = function () {
+                console.log("Hola a todos soy " + this.nombre);
+            }
+            if (typeof apellido !== "undefined") {
+                this.nombre_completo = nombre + " " + apellido;
+            }
+        }
+        var diego = new Tutor("Diego Alberto ", "Canto Ricardez");
+        var miguel = new Tutor("Miguel");
+
+        Tutor.prototype.edad = 20;
+        Tutor.iniciar_tutorial = function () {
+            console.log("Bienvenidos a este tutorial");
+        };
+        Tutor.iniciar_tutorial()
+        console.log(diego.edad);
+        console.log(miguel.edad);
+
+
+        console.log(diego.__proto__.__proto__);
+
+    </script>
+</body>
+
+</html>

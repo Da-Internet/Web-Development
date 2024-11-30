@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <title>Ejercicio 20</title>
+</head>
+
+<body>
+    <script>
+
+        function Tutor(nombre) {
+            this.nombre = nombre;
+            this.saludar = function () {
+                console.log("Hola a todos soy " + this.nombre);
+            }
+            if (typeof apellido !== "undefined") {
+                this.nombre_completo = nombre + " " + apellido;
+            }
+        }
+        var diego = new Tutor("Diego Alberto", "Canto Ricardez");
+        diego.saludar();
+        console.log(diego.nombre_completo)
+        var Miguel = new Tutor("Miguel");
+        Miguel.saludar();
+
+    </script>
+</body>
+
+</html>
