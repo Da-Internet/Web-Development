@@ -1,0 +1,14 @@
+{
+    "Nombre del Juego": "Hollow Knight",
+    "Desarrollador": "Team Cherry",
+    "Genero": "Metroidvania",
+    "Lanzamiento": 2017,
+    "Plataforma": "consola",
+    "Precio": 149,
+    "clasificacion": "E",
+    "Calificacion": {
+        "MetaCritic": "90",
+        "Comunidad": "8.83",
+        "Vandal": "9"
+    }
+}

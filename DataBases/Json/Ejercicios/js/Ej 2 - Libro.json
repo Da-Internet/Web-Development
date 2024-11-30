@@ -1,0 +1,48 @@
+{
+    "Titulo": "ILLUMINAE. Expediente_01",
+    "Autor": [
+        "Amie Kaufman",
+        "Jay Kristoff"
+    ],
+    "Genero": "Sci-fi",
+    "Numero de paginas": "599",
+    "Editorial": {
+        "Nombre Editorial": "Alfred a Knopf Inc",
+        "Fundadores": "Alfred Abraham Knopf",
+        "Autores Publicados": [
+            "John Banville",
+            "Max Beerbohm",
+            "Carl Bernstein",
+            "Albert Camus",
+            "Willa Cather",
+            "Julia Child",
+            "Bill Clinton",
+            "Michael Crichton",
+            "Joan Didion",
+            "Fernanda Eberstadt",
+            "Bret Easton Ellis",
+            "Joseph J. Ellis",
+            "James Ellroy",
+            "Ana Frank",
+            "Lee H. Hamilton",
+            "Carl Hiaasen",
+            "Kazuo Ishiguro",
+            "Thomas Kean",
+            "John Keegan",
+            "Christopher Lasch",
+            "Jack London",
+            "Thomas Mann",
+            "Gabriel García Márquez"
+        ]
+    },
+    "Reseñas": [
+        {
+            "Bustle.com": "You're not in for an ordinary novel experience...",
+            "MTV.com": "A truly interactive experience... A fantastically fun ride.",
+            "Booklist": "An arresting visual experience",
+            "Shelf Awareness": "A game-changer",
+            "Publishers Weekly": "Stylistically mesmerizing",
+            "Kirkus Reviews": "Out-of-this-world awesome"
+        }
+    ]
+}

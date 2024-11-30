@@ -1,0 +1,34 @@
+{
+    "Destino": "Francia",
+    "Fecha de Ida": "1 de Julio de 2023",
+    "Fecha de Regreso": "31 de Julio de 2023",
+    "Transporte": {
+        "Metodo": "Vuelo",
+        "Costo": "MXN$ 34,802",
+        "Servicio": "British Airways"
+    },
+    "Visitas Planeadas": [
+        "Torre Eiffel",
+        "Arco del Triunfo",
+        "Notre Dame",
+        "Parc Astérix",
+        "Sacré Cœur",
+        "Gardens of Luxembourg",
+        "Las Catacumbas",
+        "Seine",
+        "Château de Versailles",
+        "El Obelisco",
+        "Louvre",
+        "Pont D'Espagne",
+        "Chamonix",
+        "Mont Saint-Michel",
+        "La Réunion",
+        "Vaux-le-Vicomte",
+        "Château de Chambord",
+        "Château de Pierrefonds",
+        "Dinan",
+        "Lake Annecy",
+        "Lascaux",
+        "Dordogne Valley"
+    ]
+}

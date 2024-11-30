@@ -1,0 +1,159 @@
+{
+    "catalogodejuegos": [
+        {
+            "id": 1,
+            "nombreDelJuego": "Hollow Knight",
+            "genero": "Metroidvania",
+            "lanzamiento": 2017,
+            "plataforma": "consola",
+            "precio": 149,
+            "clasificacion": "E",
+            "urlImagen": "https://i.3djuegos.com/juegos/11596/hollow_knight/fotos/ficha/hollow_knight-3915488.jpg"
+        },
+        {
+            "id": 2,
+            "nombreDelJuego": "Ultrakill",
+            "genero": "Shooter",
+            "lanzamiento": 2020,
+            "plataforma": "PC",
+            "precio": 233,
+            "clasificacion": "M",
+            "urlImagen": "https://upload.wikimedia.org/wikipedia/en/4/48/Ultrakill_cover.png"
+        },
+        {
+            "id": 3,
+            "nombreDelJuego": "Minecraft",
+            "genero": "Sandbox",
+            "lanzamiento": 2011,
+            "plataforma": "Multiplataforma",
+            "precio": 599,
+            "clasificacion": "E",
+            "urlImagen": "https://www.minecraft.net/content/dam/games/minecraft/key-art/Games_Subnav_Minecraft-300x465.jpg"
+        },
+        {
+            "id": 4,
+            "nombreDelJuego": "Batman: Arkham Knight",
+            "genero": "Accion",
+            "lanzamiento": 2015,
+            "plataforma": "Multiplataforma",
+            "precio": 399,
+            "clasificacion": "M",
+            "urlImagen": "https://cdn.mobygames.com/covers/1005806-batman-arkham-knight-front-cover.jpg"
+        },
+        {
+            "id": 5,
+            "nombreDelJuego": "Fallout 4",
+            "genero": "RPG",
+            "lanzamiento": 2015,
+            "plataforma": "Multiplataforma",
+            "precio": 359,
+            "clasificacion": "M",
+            "urlImagen": "https://i.3djuegos.com/juegos/11529/fallout_4/fotos/ficha/fallout_4-3148336.jpg"
+        },
+        {
+            "id": 6,
+            "nombreDelJuego": "Dead Cells",
+            "genero": "Metroidvania",
+            "lanzamiento": 2018,
+            "plataforma": "PC",
+            "precio": 233,
+            "clasificacion": "T",
+            "urlImagen": "https://cdn1.epicgames.com/1368a7f14c3344bbaededbae528fafed/offer/EGS_DeadCells_MotionTwin_S2-1200x1600-34d9d5ebca89e17e0a26ddb2cb158b75.jpg"
+        },
+        {
+            "id": 7,
+            "nombreDelJuego": "Bioshock",
+            "genero": "Shooter",
+            "lanzamiento": 2007,
+            "plataforma": "Multiplataforma",
+            "precio": 179,
+            "clasificacion": "M",
+            "urlImagen": "https://e.snmc.io/lk/l/x/b427e4942e73ea97d4618201414dfece/8887797"
+        },
+        {
+            "id": 8,
+            "nombreDelJuego": "The Great Ace Attorney",
+            "genero": "Visual Novel",
+            "lanzamiento": 2021,
+            "plataforma": "PC",
+            "precio": 799,
+            "clasificacion": "T",
+            "urlImagen": "https://preview.redd.it/the-great-ace-attorney-chronicles-cover-art-v0-jakou8r6c47a1.png?width=800&format=png&auto=webp&s=e745b82938869d08980cbed9ef0460cfad72b079"
+        },
+        {
+            "id": 9,
+            "nombreDelJuego": "Metal Gear Rising Revengeance",
+            "genero": "Fighting",
+            "lanzamiento": 2017,
+            "plataforma": "Multiplataforma",
+            "precio": 799,
+            "clasificacion": "T",
+            "urlImagen": "https://cdn.vox-cdn.com/thumbor/6xjJZADtIyIqbd1peR7lKHvHhW4=/0x175:915x785/1400x1400/filters:focal(0x175:915x785):format(jpeg)/cdn.vox-cdn.com/uploads/chorus_image/image/5136281/metal.0.jpg"
+        },
+        {
+            "id": 10,
+            "nombreDelJuego": "Demon Souls",
+            "genero": "Souls-Like",
+            "lanzamiento": 2009,
+            "plataforma": "Multiplataforma",
+            "precio": 769,
+            "clasificacion": "M",
+            "urlImagen": "https://e.snmc.io/lk/l/x/8691382dfd488ac4fe2819033245a58c/8931753"
+        },
+        {
+            "id": 11,
+            "nombreDelJuego": "Dark Souls: Prepare To Die Edition",
+            "genero": "Souls-Like",
+            "lanzamiento": 2012,
+            "plataforma": "Multiplataforma",
+            "precio": 769,
+            "clasificacion": "M",
+            "urlImagen": "https://i.redd.it/zh5efj6w18z61.jpg"
+        },
+        {
+            "id": 12,
+            "nombreDelJuego": "Dark Souls 2",
+            "genero": "Souls-Like",
+            "lanzamiento": 2014,
+            "precio": 439,
+            "clasificacion": "M",
+            "urlImagen": "https://howlongtobeat.com/games/Dark_Souls_II_cover.jpg"
+        },
+        {
+            "id": 13,
+            "nombreDelJuego": "BloodBorne",
+            "genero": "Souls-Like",
+            "lanzamiento": 2015,
+            "precio": 379,
+            "clasificacion": "M",
+            "urlImagen": "https://i0.wp.com/www.tomosygrapas.com/wp-content/uploads/2018/02/Bloodborne-1-Cover-B.jpg?ssl=1"
+        },
+        {
+            "id": 14,
+            "nombreDelJuego": "Dark Souls 3",
+            "genero": "Souls-Like",
+            "lanzamiento": 2016,
+            "precio": 1099,
+            "clasificacion": "M",
+            "urlImagen": "https://cdn-prod.scalefast.com/public/assets/user/122595/image/5243deb55a7ee9587ad2db9298e96ca5.jpg"
+        },
+        {
+            "id": 15,
+            "nombreDelJuego": "Sekiro™: Shadows Die Twice",
+            "genero": "Souls-Like",
+            "lanzamiento": 2019,
+            "precio": 1299,
+            "clasificacion": "M",
+            "urlImagen": "https://i.pinimg.com/originals/ba/a0/8b/baa08bc3dc95fb3d105391e7ca24dd82.jpg"
+        },
+        {
+            "id": 16,
+            "nombreDelJuego": "Elden Ring",
+            "genero": "Souls-Like",
+            "lanzamiento": 2022,
+            "precio": 1200,
+            "clasificacion": "M",
+            "urlImagen": "https://m.media-amazon.com/images/I/6110RSDn3PL.jpg"
+        }
+    ]
+}

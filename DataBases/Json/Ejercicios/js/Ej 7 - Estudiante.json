@@ -1,0 +1,25 @@
+{
+    "Nombre": "Diego Alberto",
+    "Apellido": "Canto Ricardez",
+    "Matricula": 20190062,
+    "Edad": "20",
+    "Sexo": "Masculino",
+    "Grupo": "502",
+    "Cuatrimestre": "5to",
+    "Escuela": {
+        "Nombre Escuela": "Universidad Tecnologica del Sureste de Veracruz",
+        "Calle": "Av. Universidad Tecnológica Lote Grande 1",
+        "Ciudad": "Itzhuatlan",
+        "CP": "96360"
+    },
+    "Materias": [
+        "Aplicaciones de IoT",
+        "Desarrollo Movil Multiplataforma",
+        "Aplicaciones Web para I4.0",
+        "Base de Datos para Computo en la Nube",
+        "Integradora II",
+        "Expresion Oral y Escrita II",
+        "Ingles V",
+        "Tutoria"
+    ]
+}
