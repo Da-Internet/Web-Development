@@ -14,30 +14,3 @@ npm init -y
 * npm i morgan - Para ver las peticiones del servidor
 * npm i web-push - Para notificaciones Push
 * npm i dotenv - Para guardar variables en el sistema operativo
-
-
-# Paso a Paso
-## Paso 1
-Crear un Proyecto con NodeJS
-
-##
-
-
-##
-
-
-##
-
-
-##
-
-
-##
-
-
-##
-
-
-##
-
-
