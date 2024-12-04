@@ -1,8 +1,8 @@
 
-console.log("Archivo ServiceWorker.js detectado");
+console.log("Archivo ServiceWorkers.js detectado");
 
 // Nombre del Cache
-const currentCache = 'cache-v2.5';
+const currentCache = 'Cache_v1.1';
 
 // Archivos para  guardar  en el caché
 const files = [
@@ -85,7 +85,7 @@ self.addEventListener("install", event => {
         })()
     );
 
-    // Activa  el ServiceWorker tras instalar
+    // Activa  el ServiceWorkers tras instalar
     self.skipWaiting();
 });
 
