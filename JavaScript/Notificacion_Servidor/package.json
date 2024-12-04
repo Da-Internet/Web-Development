@@ -1,0 +1,16 @@
+{
+  "name": "virtualnews",
+  "version": "1.0.0",
+  "description": "Proyecto de Notificaciones con Servidor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1",
+    "web-push": "^3.6.7"
+  }
+}
