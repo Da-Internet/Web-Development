@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style_3.css">
+    <title>
+        Ejercicio 3
+    </title>
+
+    <!-- Hecho por: Diego Alberto Canto Ricardez -->
+
+</head>
+
+<body>
+
+    <h1>Ejercicio 3</h1>
+
+    <!-- Musica -->
+
+    <audio controls>
+        <!-- Archivo de Musica -->
+        <source src="Audio.mp3" type="audio/mpeg" />
+        <object type="application/x-shockwave-flash"
+        data="player.swf?soundFile=Audio.mp3">
+        <param name="movie" value="player.swf?soundFile=Audio.mp3" />
+        <a href="Audio.mp3"> Descargar </a>
+        </object>
+    </audio>
+
+    <div> <br> </div>
+
+    <!-- Descarga de Musica -->
+
+    <div>
+
+        <button><a href="Audio.mp3"> Descargar (En caso de no Aparecer) </a></button>
+
+    </div>
+
+    <div> <br> </div>
+    
+    <!-- Video -->
+
+    <video controls width="720" height="480" poster="poster.jpg" id="video">
+
+        <source src="Video.mp4" type="video/mp4" />
+        <object type="application/x-shockwave-flash" width="360" height="240" data="player.swf?file=Video.mp4">
+        <param name="movie" value="player.swf?file=Video.mp4" />
+        <a href="Video.mp4">Descargar</a>
+        </object>
+        
+    </video>
+
+</body>
+</html>

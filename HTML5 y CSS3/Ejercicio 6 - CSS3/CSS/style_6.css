@@ -1,0 +1,41 @@
+html{
+	background-color: darkgreen;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+#example1 {
+	border-radius: 30px;
+	border: 2px solid black;
+	padding: 10px;
+	width: 50%;
+	background-color: darkblue;
+}
+
+#example2 {
+	-moz-box-shadow: 5px 5px 6px #888888;
+	-webkit-box-shadow: 5px 5px 6px #888888;
+	box-shadow: 5px 5px 6px #888888;
+	width: 50%;
+	background-color:darkblue;
+}
+
+#example3 {
+	text-shadow: 2px 2px 2px #757575;
+}
+
+.Colores{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	background-color: darkblue;
+}
+
+#example5 {
+	-webkit-transition-property: all;
+	-moz-transition-property: all;
+	-o-transition-property: all;
+	transition-property: all;
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	transition-duration: 1s;
+}

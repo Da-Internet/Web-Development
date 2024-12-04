@@ -1,0 +1,22 @@
+{
+    "Nombre": "Diego Alberto",
+    "Apellido": "Canto Ricardez",
+    "Edad": "20",
+    "sexo": "Masculino",
+    "Direccion": {
+        "Calle": "Hilario Rodriguez Malpica",
+        "Colonia": "Centro",
+        "No. Int": "---",
+        "No. Ext": "500",
+        "CP": "96400",
+        "Ciudad": "Coatzacoalcos",
+        "Estado": "Veracruz"
+    },
+    "Hobbies": [
+        "Jugar Videojuegos",
+        "Leer comics",
+        "Leer Manga",
+        "Ver series",
+        "Usar redes Sociales"
+    ]
+}

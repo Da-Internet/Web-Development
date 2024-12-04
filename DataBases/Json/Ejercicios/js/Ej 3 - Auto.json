@@ -1,0 +1,12 @@
+{
+    "Coche": "Taos",
+    "Tipo de Coche": "SUV",
+    "Distribuidora": "Volkswagen",
+    "Color": "Rojo",
+    "Año de Produccion": "2023",
+    "Opciones Adicionales": [
+        "Automatico",
+        "Sistema de Navegacion Incluido",
+        "Sensores de Manejo Incluidos"
+    ]
+}

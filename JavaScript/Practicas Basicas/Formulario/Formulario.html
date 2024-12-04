@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+
+    <link rel="stylesheet" href="Formulario.css">
+    <script src="Formulario.js"></script>
+
+</head>
+
+<body>
+
+    <h1 class="Titulo">Formulario</h1>
+
+    <div class="Formulario">
+
+        <div>
+
+            <div class="Pregunta">
+                <label for="Usuario">Nombre de Usuario</label>
+                <input type="text" id="Usuario" name="Usuario" placeholder="Ingrese su Nombre de Usuario" required>
+            </div>
+
+            <br>
+
+            <div class="Pregunta">
+                <label for="Nombre">Nombre y Apellido</label>
+                <input type="text" id="Nombre" name="Nombre" placeholder="Ingrese su Nombre y Apellido" required>
+            </div>
+
+            <button type="submit" id="botonEnviar" class="button"> Enviar </button>
+            <button type="reset" id="botonLimpiar" class="button"> Limpiar </button>
+            <button type="submit" id="botonCambiar" class="button"> Voltear </button>
+
+            <p>Clase 1</p>
+        </div>
+
+        <br>
+        <br>
+
+        <div>
+
+            <div class="Pregunta">
+                <label for="Edad">Edad</label>
+                <input type="number" id="Edad" name="Edad" placeholder="Ingrese su Edad" required min="5" max="100">
+            </div>
+
+            <p id="MayoriaEdad"></p>
+    
+            <div class="Pregunta">
+                <label for="Num1">Numero 1</label>
+                <input type="number" id="Num1" name="Num1" placeholder="Ingrese el Numero 1" required min="1" max="9999">
+            </div>
+    
+            <div class="Pregunta">
+                <label for="Num2">Numero 2</label>
+                <input type="number" id="Num2" name="Num2" placeholder="Ingrese el Numero 2" required min="1" max="9999">
+            </div>
+    
+            <button type="submit" id="botonEdad" class="button"> Comparar Edad </button>
+            <button type="submit" id="botonTabla" class="button"> Obtener Tabla del Numero 1</button>
+            <br><br>
+            <button type="submit" id="botonSuma" class="button"> Sumar </button>
+            <button type="submit" id="botonResta" class="button"> Restar </button>
+            <button type="submit" id="botonMult" class="button"> Multiplicar </button>
+            <button type="submit" id="botonDividir" class="button"> Dividir </button>
+    
+            <p id="resultado"></p>
+
+            <p>Clase 2</p>
+        </div>
+
+    </div>
+
+    <footer class="PiePagina">
+        Hecho por: Diego Alberto Canto Ricardez | 05/03/2024
+    </footer>
+
+</body>
+
+</html>

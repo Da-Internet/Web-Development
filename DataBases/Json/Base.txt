@@ -1,0 +1,12 @@
+{
+    "Atributo": "Info",
+    "Objeto": {
+        "1": "Info",
+        "2": "Info",
+        "3": "Info"
+    },
+    "Arreglo": [
+        "1",
+        "2"
+    ]
+}
