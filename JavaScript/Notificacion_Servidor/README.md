@@ -10,14 +10,13 @@ npm init -y
 
 ## Modulos y Como Instalarlos
 * npm i express - Necesario Eternamente
-* npm i mySQL2 - Para conectar con Bases de Datos MySQL
-* npm i body-parser - Para convertir los valores a JSON al exportar
 * npm i nodemon - Para reiniciar automaticamente el servidor con cada cambio
-* npm i morgan - 
-* npm i bcryptjs - Para encriptar contraseñas
-* npm i jsonwebtoken - Para tokens moviles usados en login
+* npm i morgan - Para ver las peticiones del servidor
 * npm i web-push - Para notificaciones Push
+* npm i dotenv - Para guardar variables en el sistema operativo
 
+
+# Paso a Paso
 ## Paso 1
 Crear un Proyecto con NodeJS
 
