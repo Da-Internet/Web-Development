@@ -1,4 +1,7 @@
 
+// Modulo Dotenv para manejar archivos .env antes de cargar todo
+require('dotenv').config();
+
 // Exportamos Express y creamos el objecto-instancia de Express (Obligatorio)
 const express = require('express');
 const app = express();
